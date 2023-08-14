@@ -3,7 +3,7 @@
 Inspired by the tetris game in the legendary childhood 4 button console Benrikids Game.
 
 # Guide to the rules of the game
-Press the Play button to start the game.
+Press the **Play** button to start the game.
 
 The blocks will automatically fall down after 1 second.
 
@@ -26,7 +26,6 @@ There will be 4 more buttons to let us touch the screen and control the block.
 
 ![image](https://github.com/VenusakaVXT/tetris-game/assets/125566811/61b71581-cc0a-4d6c-bfd5-039b694c0026)
 
-
 # How to calculate points
 
 Filling a row will add 10 points to **Score** and that row will be deleted to have more space to continue playing.
@@ -35,3 +34,6 @@ The highest score in each play will be stored in **High Score**.
 
 When the block hits the top level, it will be **Game Over**.
 
+Press **Play** to start a new game.
+
+Click **Reload Page** to start playing the game again as it did the first time.
