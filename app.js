@@ -297,6 +297,8 @@ class Brick {
         this.activeIndex = 0; // Rotation direction style position in each layout is only numbered from 0 -> 3
         this.colPos = 3; // default
         this.rowPos = -2; // default
+        // this.moveSound = new Audio('./sounds/move_sound.mp3');
+        // remove moveSound because it feels uncomfortable when there are too many sounds :)))
     }
 
     drawBrick() {
@@ -329,6 +331,8 @@ class Brick {
             this.clearBrick(); // delete the old location first
             this.colPos--; // brick to the left 1 time
             this.drawBrick();
+            // this.moveSound.volume = 1;
+            // this.moveSound.play();
         }
     }
 
@@ -337,6 +341,8 @@ class Brick {
             this.clearBrick(); // delete the old location first
             this.colPos++; // brick to the right 1 time
             this.drawBrick();
+            // this.moveSound.volume = 1;
+            // this.moveSound.play();
         }
     }
 
@@ -367,6 +373,8 @@ class Brick {
              * activeIndex = 3 ==> (3 + 1) % 4 = 0
              **/
             this.drawBrick();
+            // this.moveSound.volume = 1;
+            // this.moveSound.play();
         }
     }
 
@@ -481,6 +489,7 @@ turnVolumeBtn.addEventListener('click', function() {
         this.innerHTML = `<i class='bx bxs-volume-mute'></i>`
         board.audio.pause();
         isTurnVolume = false;
+        // brick.moveSound.src = null;
     }
 })
 
