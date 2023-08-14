@@ -23,6 +23,10 @@ There will be 4 more buttons to let us touch the screen and control the block.
 **Note:** 
 - The block is set to 1 second automatically falling down 1 row, so let the block down faster than pressing the Arrow Down button, but if the setting is 0.5 seconds, the falling speed will be very fast, it will be more difficult to play.
 - The block is only rotated within a certain range, so there will be some blocks that will not rotate when close to the edge of the chessboard on the left and right sides.
+
+![image](https://github.com/VenusakaVXT/tetris-game/assets/125566811/61b71581-cc0a-4d6c-bfd5-039b694c0026)
+
+
 # How to calculate points
 
 Filling a row will add 10 points to **Score** and that row will be deleted to have more space to continue playing.
