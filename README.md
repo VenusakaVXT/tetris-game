@@ -25,6 +25,7 @@ There will be 4 more buttons to let us touch the screen and control the block.
 - The block is only rotated within a certain range, so there will be some blocks that will not rotate when close to the edge of the chessboard on the left and right sides.
 
 **How to calculate points**
+
 Filling a row will add 10 points to **Score** and that row will be deleted to have more space to continue playing.
 
 The highest score in each play will be stored in **High Score**.
