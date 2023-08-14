@@ -531,18 +531,22 @@ document.getElementById('pause-btn').addEventListener('click', () => {
 })
 
 // Handling block control by phone
-document.getElementById('rotate').addEventListener('touchstart', () => {
+document.getElementById('rotate').addEventListener('touchstart', (e) => {
+    e.preventDefault();
     brick.rotateBrick();
 })
 
-document.getElementById('left').addEventListener('touchstart', () => {
+document.getElementById('left').addEventListener('touchstart', (e) => {
+    e.preventDefault();
     brick.moveLeft();
 })
 
-document.getElementById('right').addEventListener('touchstart', () => {
+document.getElementById('right').addEventListener('touchstart', (e) => {
+    e.preventDefault();
     brick.moveRight();
 })
 
-document.getElementById('down').addEventListener('touchstart', () => {
+document.getElementById('down').addEventListener('touchstart', (e) => {
+    e.preventDefault();
     brick.moveDown();
 })
