@@ -213,7 +213,7 @@ class Board {
         this.loseGame = false;
         this.isPlaying = false;
 
-        this.audio = new Audio('../sounds/success.wav');
+        this.audio = new Audio('./sounds/success.wav');
     }
 
     splitCells() {
@@ -266,7 +266,7 @@ class Board {
         this.loseGame = true;
         this.isPlaying = false;
         const loseSound = document.createElement('audio');
-        loseSound.src = '../sounds/lose.wav';
+        loseSound.src = './sounds/lose.wav';
         loseSound.play();
         if (loseSound.played) {
             let gameOverNotification = setInterval(() => { 
@@ -466,7 +466,7 @@ document.addEventListener('keydown', (e) => {
 // Settings game
 // Turn on/off volume
 const backgroundMusic = document.createElement('audio');
-backgroundMusic.src = '../sounds/tetris_game_soundtrack.mp3';
+backgroundMusic.src = './sounds/tetris_game_soundtrack.mp3';
 
 const turnVolumeBtn = document.getElementById('turn-volume-btn');
 let isTurnVolume = false;
