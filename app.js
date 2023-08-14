@@ -520,3 +520,20 @@ document.getElementById('pause-btn').addEventListener('click', () => {
         board.isPlaying = true;
     }
 })
+
+// Handling block control by phone
+document.getElementById('rotate').addEventListener('touchstart', () => {
+    brick.rotateBrick();
+})
+
+document.getElementById('left').addEventListener('touchstart', () => {
+    brick.moveLeft();
+})
+
+document.getElementById('right').addEventListener('touchstart', () => {
+    brick.moveRight();
+})
+
+document.getElementById('down').addEventListener('touchstart', () => {
+    brick.moveDown();
+})

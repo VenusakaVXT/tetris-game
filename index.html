@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="./img/tetris_game_ic.png" type="image/x-icon">
     <title>Tetris Game</title>
 </head>
 <body>
@@ -32,6 +33,23 @@
         </div>
     </div>
 
+    <div class="control">
+        <button id="rotate">
+            <i class='bx bx-rotate-right'></i>
+        </button>
+        <div class="left-right">
+            <button id="left">
+                <i class='bx bxs-left-arrow'></i>
+            </button>
+            <button id="right">
+                <i class='bx bxs-right-arrow'></i>
+            </button>
+        </div>
+        <button id="down">
+            <i class='bx bxs-down-arrow'></i>
+        </button>
+    </div>
+
     <script type="module" src="./app.js"></script>
 </body>
 
@@ -42,9 +60,11 @@
     }
 
     body {
+        height: 96vh;
         display: flex;
         align-items: center;
         justify-content: center;
+        overflow-y: hidden;
     }
 
     .wrapper {
@@ -114,6 +134,50 @@
 
     .bx-play {
         display: none;
+    }
+
+    .control {
+        display: none;
+        position: absolute;
+        width: 555px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        bottom: -240px;
+    }
+
+    .control button {
+        padding: 10px 20px;
+        font-size: 24px;
+        background: #adff2f;
+        border-radius: 8px;
+    }
+
+    .control .left-right button {
+        margin: 20px 40px;
+    }
+
+    @media (max-width: 739px) {
+        body {
+            display: block;
+            width: 50%;
+            margin: 50px 0 0 0;
+        }
+
+        .wrapper {
+            width: 100vw;
+            height: 50%;
+        }
+
+        .control {
+            display: flex;
+            width: 90%;
+            margin: 0 5%;
+            bottom: 80px;
+            align-items: center;
+            justify-content: center;
+        }
     }
 </style>
 </html>
